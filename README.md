@@ -1,54 +1,101 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+# osTicket - Ticket Lifecycle: Intake Through Resolution
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
+This tutorial demonstrates the ticket lifecycle within **osTicket**, an open-source help desk ticketing system. From intake to resolution, this guide outlines how to manage and work with tickets, along with practical tasks and tips to help you get familiar with the system's capabilities.
 
+## Video Demonstration
 
-<h2>Video Demonstration</h2>
+- **[How to create, work, and resolve tickets within osTicket](https://www.youtube.com)**
 
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
+## Environments and Technologies Used
 
-<h2>Environments and Technologies Used</h2>
+- **Microsoft Azure** (Virtual Machines/Compute)
+- **Remote Desktop**
+- **Internet Information Services (IIS)**
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+## Operating Systems Used
 
-<h2>Operating Systems Used </h2>
+- **Windows 10** (21H2)
 
-- Windows 10</b> (21H2)
+## Ticket Lifecycle Stages
 
-<h2>Ticket Lifecycle Stages</h2>
+1. **Intake**
+2. **Assignment and Communication**
+3. **Working the Issue**
+4. **Resolution**
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+### Ticket Lifecycle Workflow
 
-<h2>Lifecycle Stages</h2>
+![Ticket Lifecycle Image](https://i.imgur.com/DJmEXEB.png)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## Practical Tasks & Activities
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### Admin/Analyst Login:
+- **Admin Panel**: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### End Users osTicket URL:
+- **User Panel**: [http://localhost/osTicket](http://localhost/osTicket)
+
+---
+
+### Creating Tickets as an End User
+
+1. **Ticket 1**: *Entire mobile/online banking system is down*
+   - **Assigned To**: SysAdmins
+   - **Priority**: Sev-A (1 hour, 24/7)
+   - **Department**: Online Banking Department
+   - **Resolution**: Work the ticket to completion as **Jane**.
+
+2. **Ticket 2**: *Accounting department needs Adobe upgrade (broken)*
+   - **Assigned To**: Support
+   - **Priority**: Sev-B (4 hours, 24/7)
+   - **Department**: Support
+   - **Resolution**: Work the ticket to completion as **John**.
+
+3. **Ticket 3**: *CFO’s laptop will no longer turn on*
+   - **Assigned To**: Support
+   - **Priority**: Sev-B (4 hours, 24/7)
+   - **Department**: Support
+   - **Resolution**: Work the ticket to completion as **John**.
+
+---
+
+### Key Tasks
+
+- **Set Properties**: Change ticket properties such as severity and department.
+- **Observe Escalated Tickets**: After changing properties, observe how escalated tickets become inaccessible for further changes.
+- **Admin Permissions**: Assign yourself view access to SysAdmins and observe how escalated tickets behave.
+- **Work the Tickets**: Complete each ticket and ensure it is resolved according to the SLAs.
+
+### Additional Tasks
+
+- **Switching to the Admin Panel**: Change SysAdmins to a Top-Level Department and delete the Maintenance Department.
+- **Email Notifications**: Learn how most ticketing systems (including osTicket) notify users via email each time a ticket is updated.
+
+---
+
+### Real-Life Ticket Intake
+
+In real-life IT environments, tickets may come through various channels:
+- **Phone Calls**
+- **Chat Apps**
+- **Emails**
+- **Web Forms**
+- **In-Person Requests**
+
+Although it's tempting to fix issues on the spot, **creating tickets for all tasks** is essential for tracking work, improving metrics, and reporting performance.
+
+---
+
+### Additional Practice
+
+- Explore osTicket’s features further by redoing this lab multiple times.
+- Use the **email feature** for better communication and ticket updates.
+- Revisit the **Technical Skills Pillar** to develop your abilities and intuition in ticket management.
+
+---
+
+### Conclusion
+
+This lab provides a basic but comprehensive introduction to osTicket's ticket lifecycle, helping you build a solid foundation for managing IT support tickets. It’s a useful tool in any IT help desk, enabling agents to track, prioritize, and resolve issues efficiently.
+
+---

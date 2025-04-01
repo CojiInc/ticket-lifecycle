@@ -1,101 +1,102 @@
-# osTicket - Ticket Lifecycle: Intake Through Resolution
+<p align="center">
+<img src="https://i.imgur.com/Clzj7Xs.png" height="75%" width="100%"alt="osTicket logo"/>
+</p>
 
-This tutorial demonstrates the ticket lifecycle within **osTicket**, an open-source help desk ticketing system. From intake to resolution, this guide outlines how to manage and work with tickets, along with practical tasks and tips to help you get familiar with the system's capabilities.
+<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
+This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
 
-## Video Demonstration
 
-- **[How to create, work, and resolve tickets within osTicket](https://www.youtube.com)**
+<!-- <h2>Video Demonstration</h2>
 
-## Environments and Technologies Used
+- ### [YouTube: How to create, work, and resolve tickets within osTicket](https://www.youtube.com) -->
 
-- **Microsoft Azure** (Virtual Machines/Compute)
-- **Remote Desktop**
-- **Internet Information Services (IIS)**
+<h2>Environments and Technologies Used</h2>
 
-## Operating Systems Used
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Internet Information Services (IIS)
 
-- **Windows 10** (21H2)
+<h2>Operating Systems Used </h2>
 
-## Ticket Lifecycle Stages
+- Windows 10</b> (21H2)
 
-1. **Intake**
-2. **Assignment and Communication**
-3. **Working the Issue**
-4. **Resolution**
+<h2>Ticket Lifecycle Stages</h2>
 
-### Ticket Lifecycle Workflow
+- Intake
+- Assignment and Communication
+- Working the Issue
+- Resolution
 
-![Ticket Lifecycle Image](https://i.imgur.com/DJmEXEB.png)
+<h2>Lifecycle Stages</h2>
 
-## Practical Tasks & Activities
-
-### Admin/Analyst Login:
-- **Admin Panel**: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
-
-### End Users osTicket URL:
-- **User Panel**: [http://localhost/osTicket](http://localhost/osTicket)
-
----
-
-### Creating Tickets as an End User
-
-1. **Ticket 1**: *Entire mobile/online banking system is down*
-   - **Assigned To**: SysAdmins
-   - **Priority**: Sev-A (1 hour, 24/7)
-   - **Department**: Online Banking Department
-   - **Resolution**: Work the ticket to completion as **Jane**.
-
-2. **Ticket 2**: *Accounting department needs Adobe upgrade (broken)*
-   - **Assigned To**: Support
-   - **Priority**: Sev-B (4 hours, 24/7)
-   - **Department**: Support
-   - **Resolution**: Work the ticket to completion as **John**.
-
-3. **Ticket 3**: *CFO’s laptop will no longer turn on*
-   - **Assigned To**: Support
-   - **Priority**: Sev-B (4 hours, 24/7)
-   - **Department**: Support
-   - **Resolution**: Work the ticket to completion as **John**.
-
----
-
-### Key Tasks
-
-- **Set Properties**: Change ticket properties such as severity and department.
-- **Observe Escalated Tickets**: After changing properties, observe how escalated tickets become inaccessible for further changes.
-- **Admin Permissions**: Assign yourself view access to SysAdmins and observe how escalated tickets behave.
-- **Work the Tickets**: Complete each ticket and ensure it is resolved according to the SLAs.
-
-### Additional Tasks
-
-- **Switching to the Admin Panel**: Change SysAdmins to a Top-Level Department and delete the Maintenance Department.
-- **Email Notifications**: Learn how most ticketing systems (including osTicket) notify users via email each time a ticket is updated.
-
----
-
-### Real-Life Ticket Intake
-
-In real-life IT environments, tickets may come through various channels:
-- **Phone Calls**
-- **Chat Apps**
-- **Emails**
-- **Web Forms**
-- **In-Person Requests**
-
-Although it's tempting to fix issues on the spot, **creating tickets for all tasks** is essential for tracking work, improving metrics, and reporting performance.
-
----
-
-### Additional Practice
-
-- Explore osTicket’s features further by redoing this lab multiple times.
-- Use the **email feature** for better communication and ticket updates.
-- Revisit the **Technical Skills Pillar** to develop your abilities and intuition in ticket management.
-
----
-
-### Conclusion
-
-This lab provides a basic but comprehensive introduction to osTicket's ticket lifecycle, helping you build a solid foundation for managing IT support tickets. It’s a useful tool in any IT help desk, enabling agents to track, prioritize, and resolve issues efficiently.
-
----
+<h3 align="center">Intake</h3>
+<br />
+<p>
+  User Ken creates a ticket:
+</p>
+<p>
+  <img src="https://i.imgur.com/ewueu9b.png: height="75%" width="100%" alt="Open a Ticket"/>
+</p>
+<br />
+<br />
+<h3 align="center">Ticket assignment</h3>
+<br />
+<p>
+  Support agent John Doe logs in.
+</p>
+<p>
+  <img src="https://i.imgur.com/i3sa7FH.jpg" height="75%" width="100%" alt="Support agent login"/>
+</p>
+<br />
+<br />
+<h3 align="center">Communication</h3>
+<br />
+<p>
+  Agent John sees this is Sev-A emergency ticket and has to reassign ticket to a System Administrator.
+</p>
+<p>
+  He makes sure to leave a proper message:
+</p>
+<p>
+  <img src="https://i.imgur.com/wVucqKf.png" height="75%" width="100%" alt="Communication"/>
+</p>
+<br />
+<br />
+<h3 align="center">Working the issue</h3>
+<br />
+<p>
+  System Administrator agent Jane Doe logs in:
+</p>
+<p>
+  <img src="https://i.imgur.com/i61WQKi.jpg" height="75%" width="100%" alt="Sys admin agent login"/>
+</p>
+<p>
+  Agent Jane works the issue and communicates back to agent John.
+</p>
+<p>
+  She also makes sure to switch the status of the issue from open to resolved:
+</p>
+<p>
+  <img src="https://i.imgur.com/DYPJufr.png" height="75%" width="100%" alt="Working the issue"/>
+</p>
+<br />
+<br />
+<h3 align="center">Resolution</h3>
+<br />
+<p>
+  Support agent John sees in his portal that System Administrator agent Jane has left him a message and that the ticket is now closed:>
+</p>
+<p>
+  <img src="https://i.imgur.com/kRpUysm.png" height="75%" width="100%" alt="Working the issue"/>
+</p>
+<br />
+<br />
+<p>
+  This was a very simplistic scenario of the creation of a ticket by a user, how the ticket is assigned and displays the communication of a ticket between agents; subsequently resulting in a resolution.
+</p>
+<p>
+  There are additional scenarios that can also happen while a ticket is being assessed. A ticket can either be reassigned to a different department, escalated in severeity level, or needs to be both reassigned to a more qualified agent/department to handle the issue, depending on business impacts.
+</p>
+<p>
+  I hope this tutorial helps you understand and have a better general overview of a life-cycle of a ticket. Help desk agents can expect to regularly deal with anywere between 10 to 100 tickets during their day depeneding on the company size.
+</p>
